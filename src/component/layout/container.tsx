@@ -1,10 +1,15 @@
 import React from 'react'
 
-const Container = ({children}: {children: React.ReactNode}) => {
+type Props = {
+  children: React.ReactNode,
+  classNamee?: string
+}
+
+const Container: React.FC<Props> = ({children, classNamee}) => {
   return (
-    // <div className="w-full flex items-center justify-center ">
-      <div className="w-[85%] h-auto mx-auto">{children}</div>
-    // </div>
+      <div className={`w-full max-w-7xl px-4 mx-auto ${classNamee}`}>{children}</div>
+      // <div className={`w-[85%] h-auto mx-auto ${classNamee}`}>{children}</div>
+
   )
 }
 
