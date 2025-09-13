@@ -1,5 +1,6 @@
 import { HeartIcon, ShoppingCartIcon, MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import Container from '../container'
+import Container from "../layout/container"
+
 
 type Props = { onMobileMenuToggle: () => void, isMobileMenuOpen: boolean }
 
