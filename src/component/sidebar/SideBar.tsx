@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { XMarkIcon, AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
 import { filtersData } from "@/constents/filtersData";
+import SideSectionWrapper from "./SideSectionWrapper";
 
-const SidePar = () => {
+const SideBar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [priceRange, setPriceRange] = useState({
     min: filtersData.find(f => f.type === "range")?.defaultMin || 0,
     max: filtersData.find(f => f.type === "range")?.defaultMax || 0
@@ -22,13 +24,36 @@ const SidePar = () => {
     }));
   };
 
+ 
   return (
-    <aside className="w-1/3 min-w-[250px] h-full bg-white rounded-sm shadow-lg p-5 flex flex-col gap-3 top-0">
-      {filtersData.map((filter, idx) => {
+    <>
+      <button
+        className="md:hidden fixed top-42 left-1 z-50 bg-primary text-white p-1 rounded-full shadow-lg focus:outline-none"
+        onClick={() => setSidebarOpen(true)}
+      >
+        <AdjustmentsHorizontalIcon className="w-7 h-7" />
+      </button>
+      {sidebarOpen && (
+        <div className="fixed inset-0 bg-black/30 z-40 md:hidden" onClick={() => setSidebarOpen(false)}></div>
+      )}
+      <aside
+        className={`
+          fixed top-0 left-0 h-fit z-50 transition-transform duration-300 bg-white md:static md:translate-x-0
+          ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+          w-4/5 max-w-xs md:w-1/3 md:min-w-[250px] md:block rounded-r-2xl shadow-lg p-5 flex flex-col gap-3
+        `}
+        style={{ minHeight: '100vh' }}
+      >
+        <button
+          className="md:hidden absolute top-4 right-4 text-gray-500 hover:text-red-500 z-50"
+          onClick={() => setSidebarOpen(false)}
+        >
+          <XMarkIcon className="w-7 h-7" />
+        </button>
+        {filtersData.map((filter, idx) => {
         if (filter.type === "range") {
           return (
-            <details key={idx} className="group border-b-1 border-gray-300" open={filter?.isOpen} >
-              <summary className="font-semibold text-gray-800 cursor-pointer py-3 px-1 group-open:bg-gray-100 transition">{filter.title}</summary>
+            <SideSectionWrapper key={idx} isOpen={filter.isOpen} title={filter.title}>
               <div className="pl-4 py-3 flex flex-col gap-2">
                 <div className="relative h-8 flex items-center">
                   <input
@@ -50,14 +75,14 @@ const SidePar = () => {
                 </div>
                 <div className="text-xs text-gray-500 mt-1">Price: ${priceRange.min} - ${priceRange.max}</div>
               </div>
-            </details>
+            </SideSectionWrapper>
+
           );
         }
 
         if (filter.type === "text") {
           return (
-            <details key={idx} className="group border-b-1 border-gray-300" open={filter?.isOpen}>
-              <summary className="font-semibold text-gray-800 cursor-pointer py-3 px-1 group-open:bg-gray-100 transition">{filter.title}</summary>
+            <SideSectionWrapper key={idx} isOpen={filter.isOpen} title={filter.title}>
               <div className="pl-4 py-3 flex flex-col gap-2">
                 {filter.items?.map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
@@ -77,14 +102,13 @@ const SidePar = () => {
                 ))}
                 <button className="text-xs text-primary hover:underline w-fit mt-1">Clear All</button>
               </div>
-            </details>
+            </SideSectionWrapper>
           );
         }
 
         if (filter.type === "list") {
           return (
-            <details key={idx} className="group border-b-1 border-gray-300" open={filter?.isOpen}>
-              <summary className="font-semibold text-gray-800 cursor-pointer py-3 px-1 group-open:bg-gray-100 transition">{filter.title}</summary>
+            <SideSectionWrapper key={idx} isOpen={filter.isOpen} title={filter.title}>
               <div className="pl-4 py-2 text-gray-600 space-y-1">
                 {filter?.items?.map((item, i) => (
                   <span key={i} className="block hover:text-primary cursor-pointer text-base p-1">
@@ -92,14 +116,15 @@ const SidePar = () => {
                   </span>
                 ))}
               </div>
-            </details>
+            </SideSectionWrapper>
           );
         }
 
         return null;
       })}
-    </aside>
+      </aside>
+    </>
   );
 };
 
-export default SidePar;
+export default SideBar;
