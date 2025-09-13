@@ -1,0 +1,46 @@
+export const KEYWORDS= [
+  {
+    title: "Laptops",
+    items: [
+      "Appleo Laptop",
+      "Acero Laptop",
+      "Samsing Laptop",
+      "Lenov Laptop",
+      "Sonyo Laptop",
+      "Delli Laptop",
+      "Asuso Laptop",
+      "Toshibao Laptop",
+      "LGG Laptop",
+      "HPO Laptop",
+    ],
+  },
+  {
+    title: "Tablet",
+    items: [
+      "FUKIO Watches",
+      "Titan Watches",
+      "Casioo Watches",
+      "Fastrack Watches",
+      "Timexi Watches",
+      "Fossili Watches",
+      "Dieselo Watches",
+      "Toshibao Watches",
+      "Luxury Watches",
+    ],
+  },
+  {
+    title: "Mobile phone",
+    items: [
+      "Shoes",
+      "Casual Shoes",
+      "Sports Shoes",
+      "Adidasi Shoes",
+      "Gas Shoes",
+      "Pumai Shoes",
+      "Reeboki Shoes",
+      "Woodlandi Shoes",
+      "Red Tape Shoes",
+      "Nikeo Shoes",
+    ],
+  },
+];
