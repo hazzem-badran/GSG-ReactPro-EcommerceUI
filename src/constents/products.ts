@@ -84,14 +84,14 @@ export const PRODUCTS = [
     oldPrice: 0,
     rating: 4.0
   },
-  {
-    id: "p10",
-    imageSrc: "/assets/product-plant.jpg",
-    title: "GreenLife Indoor Plant",
-    description: "Low-maintenance indoor plant in a ceramic pot — perfect for desks.",
-    price: 22.0,
-    oldPrice: 29.0,
-    rating: 4.9
-  }
+  // {
+  //   id: "p10",
+  //   imageSrc: "/assets/product-plant.jpg",
+  //   title: "GreenLife Indoor Plant",
+  //   description: "Low-maintenance indoor plant in a ceramic pot — perfect for desks.",
+  //   price: 22.0,
+  //   oldPrice: 29.0,
+  //   rating: 4.9
+  // }
 ];
 
