@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
-    <header className='w-full shadow-3xl' role="banner">
+    <header className='w-full shadow-3xl bg-white' role="banner">
       <TopBar />
       <MainHeader onMobileMenuToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)} isMobileMenuOpen={isMobileMenuOpen} />
       <MobileMenu isOpen={isMobileMenuOpen} />

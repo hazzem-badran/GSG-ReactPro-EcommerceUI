@@ -1,6 +1,5 @@
-import React from 'react'
-import Container from '../container'
 import { BookOpenIcon, ChartBarIcon, CreditCardIcon, EnvelopeIcon, MapPinIcon, PhoneIcon, StarIcon, TagIcon, UserPlusIcon } from '@heroicons/react/24/solid'
+import Container from '../layout/container'
 
 const TopBar = () => {
   return (
