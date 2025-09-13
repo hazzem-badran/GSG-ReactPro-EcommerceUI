@@ -4,8 +4,8 @@ import { useView } from "@/context/ViewContext";
 
 
 const Products = () => {
-    const {view} = useView()
-  
+  const { view } = useView()
+
 
   return (
 
@@ -18,8 +18,8 @@ const Products = () => {
             : "flex flex-col gap-4"
         }
       >
-        {PRODUCTS.map((product) => (
-          <Product variant={view} {...product} />
+        {PRODUCTS.map((product, index) => (
+          <Product key={index} variant={view} {...product} />
         ))}
       </div>
     </div>

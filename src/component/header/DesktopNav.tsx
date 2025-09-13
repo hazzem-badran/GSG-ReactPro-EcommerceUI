@@ -4,15 +4,15 @@ const DesktopNav = () => {
   return (
       // {/* Desktop Navigation */}
         <nav 
-          className="hidden md:flex bg-gray-100 px-6 py-3 border-b border-gray-200 shadow-sm" 
+          className="hidden md:flex bg-gray-100 px-5 py-3 border-b border-gray-200 shadow-sm" 
           aria-label="Main navigation"
         >
           <Container>
-            <ul className="flex items-center space-x-4  list-none">
+            <ul className="flex items-center space-l-4  list-none">
               <li>
                 <a
                   href="#categories"
-                  className="hover:bg-primary hover:text-white transition-colors duration-200 bg-primary text-white text-lg font-semibold rounded-l-md p-4 pr-14"
+                  className="hover:bg-primary hover:text-white transition-colors duration-200 bg-primary text-white text-md font-semibold rounded-l-md p-4 pr-14"
                   aria-current="page"
                 >
                   All Categories
@@ -32,7 +32,7 @@ const DesktopNav = () => {
                 <li key={brand}>
                   <a
                     href={`/brand/${brand.toLowerCase()}`}
-                    className="text-lg text-gray-700 px-4 py-4 rounded hover:bg-primary hover:text-white transition-colors duration-200 font-medium"
+                    className="text-md text-gray-700 px-2 py-4 rounded hover:bg-primary hover:text-white transition-colors duration-200 font-medium"
                   >
                     {brand}
                   </a>
