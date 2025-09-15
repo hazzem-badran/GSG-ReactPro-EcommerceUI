@@ -2,7 +2,7 @@ import { KEYWORDS } from './constents/keywords'
 
 const Keywords = () => {
   return (
-    <aside className="w-full md:w-1/4 rounded-lg p-4 md:p-8 mt-6 md:mt-0">
+    <aside className="w-full md:w-1/4 rounded-lg p-4 pb-0 md:p-8 mt-6 md:mt-0">
       <h2 className="text-lg text-gray-700 font-semibold mb-4 text-center md:text-left">
         Most Search Keywords
       </h2>
