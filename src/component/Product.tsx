@@ -1,6 +1,6 @@
 import React from "react";
 import { HeartIcon, StarIcon } from "@heroicons/react/24/solid";
-import Wind from "@/assets/wind.jpg";
+import Wind from "@/assets/images/wind.jpg";
 
 export type Props = {
   imageSrc?: string;

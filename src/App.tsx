@@ -7,6 +7,9 @@ import ShowingWay from './component/ShowingWay'
 import SidePar from './component/sidebar/SideBar';
 import React from 'react';
 import Keywords from './Keywords'
+import Footer from './component/footer/Footer'
+// import {
+// import {
 
 
 
@@ -23,20 +26,25 @@ function App() {
             <ShowingWay />
             <Products />
           </div>
-         
+
 
         </div>
-          
-        
+
+
       </Container>
       <section className='w-full bg-gray-300'>
-      <Container>
+        <Container>
 
 
-        <Keywords />
-      </Container>
+          <Keywords />
+        </Container>
 
-        </section>
+
+
+      </section>
+
+
+     <Footer />
     </main>
   );
 }
