@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# GSG ReactPro Ecommerce UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> This project was built as part of the **[Gaza Sky Geeks](https://gazaskygeeks.com/) React Pro Training** program.
 
-Currently, two official plugins are available:
+A modern, responsive e-commerce user interface built with React, TypeScript, and Vite. This project demonstrates best practices in UI/UX, component.
+<!-- structure, and state management for online store frontends -->
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Fast development with Vite, React, and TypeScript
+- 🛒 Product grid and list views with dynamic switching
+- 📱 Fully responsive layout and sidebar (mobile drawer)
+- 🎨 Styled with Tailwind CSS for easy customization
+- 🧩 Modular, reusable components (Header, Sidebar, Product, etc.)
+- 🔍 Filter sidebar with range sliders, categories, and more
+- 🗂 Organized folder structure for scalability
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 18+
+- TypeScript
+- Vite
+- Tailwind CSS
+- Heroicons
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Install dependencies:**
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Run the development server:**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Open your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173)
+
+## Project Structure
+
+```
+src/
+  assets/         # Images and static assets
+  component/      # UI components (Product, Sidebar, Header, etc.)
+    sidebar/      # Sidebar and filter components
+    header/       # Header and navigation
+    layout/       # Layout helpers
+    ui/           # Typography and UI primitives
+  constents/      # Static data (products, filters)
+  lib/            # Utilities
+  types/          # TypeScript types
+  App.tsx         # Main app component
+  main.tsx        # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Customization
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Edit `src/constents/products.ts` to change product data.
+- Edit `src/constents/filtersData.ts` to customize sidebar filters.
+- Update Tailwind config for your branding.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+This project is for educational/demo purposes as part of the GSG React Pro training.  
+Feel free to use and modify for your own learning or portfolio.
