@@ -10,7 +10,7 @@ const Products = () => {
   return (
 
 
-    <div className="w-full p-4 rounded-lg flex flex-col gap-4">
+    <div className=" bg-white w-full p-4 rounded-lg flex flex-col gap-4">
       <div
         className={
           view === "grid"
