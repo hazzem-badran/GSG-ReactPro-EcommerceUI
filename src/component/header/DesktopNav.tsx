@@ -4,7 +4,7 @@ const DesktopNav = () => {
   return (
       // {/* Desktop Navigation */}
         <nav 
-          className="hidden md:flex bg-gray-100 px-5 py-3 border-b border-gray-200 shadow-sm" 
+          className="hidden md:flex  px-5 py-3 border-b border-gray-200 shadow-sm" 
           aria-label="Main navigation"
         >
           <Container>
