@@ -41,8 +41,9 @@ const Product: React.FC<Props> = ({
               ? "w-full h-[180px] sm:w-[180px] sm:h-full"
               : "w-full h-[210px] sm:h-[210px]"
           }
+          overflow-hidden
           `}
-        src={Wind}
+        src={imageSrc}
         alt={title || "Product"}
       />
 
