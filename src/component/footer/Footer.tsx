@@ -5,8 +5,7 @@ import {
   PaperAirplaneIcon,
   WifiIcon,
 } from '@heroicons/react/24/solid';
-import MasterCard from "@/assets/images/master-card.png"
-import PayPal from "@/assets/images/paypal.png"
+// Images are in public/images, use <img src="/images/..." /> directly in JSX
 
 
 const Footer: React.FC = () => (
@@ -89,14 +88,14 @@ const Footer: React.FC = () => (
         Copyright © 2025 hazzem-badran
       </div>
       <div className="flex items-center gap-2">
-        <img src={MasterCard} alt="MasterCard" className="h-6" />
-        <img src={PayPal} alt="PayPal" className="h-9" />
-        <img src={MasterCard} alt="MasterCard" className="h-6" />
-        <img src={PayPal} alt="PayPal" className="h-9" />
-        <img src={MasterCard} alt="MasterCard" className="h-6" />
-        <img src={PayPal} alt="PayPal" className="h-9" />
-        <img src={MasterCard} alt="MasterCard" className="h-6" />
-        <img src={PayPal} alt="PayPal" className="h-9" />
+  <img src="/images/master-card.png" alt="MasterCard" className="h-6" />
+  <img src="/images/paypal.png" alt="PayPal" className="h-9" />
+  <img src="/images/master-card.png" alt="MasterCard" className="h-6" />
+  <img src="/images/paypal.png" alt="PayPal" className="h-9" />
+  <img src="/images/master-card.png" alt="MasterCard" className="h-6" />
+  <img src="/images/paypal.png" alt="PayPal" className="h-9" />
+  <img src="/images/master-card.png" alt="MasterCard" className="h-6" />
+  <img src="/images/paypal.png" alt="PayPal" className="h-9" />
       </div>
     </div>
   </footer>

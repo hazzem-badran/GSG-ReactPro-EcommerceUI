@@ -1,97 +1,91 @@
-// products.js
-// Example product list (10 items)
-// Fields follow the Props shape: imageSrc, title, description, price, oldPrice, rating
-
 export const PRODUCTS = [
   {
     id: "p1",
-    imageSrc: "/assets/product-wind.jpg",
+  imageSrc: "/images/wind.jpg",
     title: "Wind Wireless Headphones",
-    description: "Noise-cancelling over-ear headphones with 30h battery life and quick charge.",
+    description:
+      "Noise-cancelling over-ear headphones with 30h battery life and quick charge.",
     price: 234.53,
     oldPrice: 299.99,
-    rating: 4.8
+    rating: 4.8,
   },
   {
     id: "p2",
-    imageSrc: "/assets/product-sneakers.jpg",
-    title: "CloudRun Sneakers",
-    description: "Lightweight running shoes with breathable mesh and responsive sole.",
+  imageSrc: "/images/prodects/samsung/samsung1.jpg",
+    title: "Samsung Galaxy S24 Ultra",
+    description:
+      "6.8-inch QHD+ Dynamic AMOLED 2X, Snapdragon 8 Gen 3, 200MP camera, 5000mAh battery.",
     price: 79.99,
     oldPrice: 99.99,
-    rating: 4.5
+    rating: 4.5,
   },
   {
     id: "p3",
-    imageSrc: "/assets/product-watch.jpg",
-    title: "AeroSmart Watch",
-    description: "Smartwatch with heart-rate monitor, GPS, and AMOLED display.",
+  imageSrc: "/images/prodects/iphone/iphone1.jpg",
+  title: "iPhone 15 Pro Max",
+  description: "6.7-inch Super Retina XDR, A17 Pro chip, 48MP main camera, Titanium design.",
     price: 149.0,
     oldPrice: 199.0,
-    rating: 4.3
+    rating: 4.3,
   },
   {
     id: "p4",
-    imageSrc: "/assets/product-blender.jpg",
-    title: "PulsePro Blender",
-    description: "High-speed blender for smoothies, soups and nut butters with durable blades.",
+  imageSrc: "/images/prodects/samsung/samsung2.jpg",
+    title: "Samsung Galaxy S23 FE",
+    description:
+      "6.4-inch FHD+ AMOLED, Exynos 2200, 50MP triple camera, 4500mAh battery.",
     price: 59.5,
     oldPrice: 0,
-    rating: 4.1
+    rating: 4.1,
   },
   {
     id: "p5",
-    imageSrc: "/assets/product-lamp.jpg",
-    title: "Lumo Desk Lamp",
-    description: "Adjustable LED desk lamp with touch dimmer and USB charging port.",
+  imageSrc: "/images/prodects/iphone/iphone2.jpg",
+    title: "iPhone 14 Pro",
+    description:
+      "6.1-inch Super Retina XDR, A16 Bionic, Dynamic Island, 48MP camera system.",
     price: 32.0,
     oldPrice: 45.0,
-    rating: 4.6
+    rating: 4.6,
   },
   {
     id: "p6",
-    imageSrc: "/assets/product-backpack.jpg",
-    title: "Rover Travel Backpack",
-    description: "Water-resistant backpack with laptop compartment and anti-theft pocket.",
+  imageSrc: "/images/prodects/samsung/samsung3.jpg",
+    title: "Samsung Galaxy S22 Ultra",
+    description:
+      "6.8-inch QHD+ AMOLED, S Pen support, 108MP camera, 5000mAh battery.",
     price: 64.99,
     oldPrice: 89.99,
-    rating: 4.4
+    rating: 4.4,
   },
   {
     id: "p7",
-    imageSrc: "/assets/product-camera.jpg",
-    title: "MiniCam Pro",
-    description: "Compact action camera with 4K recording and image stabilization.",
+  imageSrc: "/images/prodects/iphone/iphone3.jpg",
+    title: "iPhone 13 Pro Max",
+    description:
+      "6.7-inch Super Retina XDR, A15 Bionic, ProMotion 120Hz, triple 12MP cameras.",
     price: 129.99,
     oldPrice: 159.99,
-    rating: 4.2
+    rating: 4.2,
   },
   {
     id: "p8",
-    imageSrc: "/assets/product-mug.jpg",
-    title: "ThermoMug 350",
-    description: "Insulated travel mug keeps drinks hot for 8 hours, leak-proof lid.",
+  imageSrc: "/images/prodects/samsung/samsung4.jpg",
+    title: "Samsung Galaxy S21 FE",
+    description:
+      "6.4-inch FHD+ AMOLED, Snapdragon 888, 32MP selfie camera, 4500mAh battery.",
     price: 18.75,
     oldPrice: 24.0,
-    rating: 4.7
+    rating: 4.7,
   },
   {
     id: "p9",
-    imageSrc: "/assets/product-speaker.jpg",
-    title: "BeatBox Mini Speaker",
-    description: "Portable Bluetooth speaker with deep bass and 12-hour playtime.",
+  imageSrc: "/images/prodects/iphone/iphone4.jpg",
+    title: "iPhone 12 Pro Max",
+    description:
+      "6.7-inch Super Retina XDR, A14 Bionic, LiDAR scanner, Ceramic Shield front.",
     price: 49.9,
     oldPrice: 0,
-    rating: 4.0
+    rating: 4.0,
   },
-  // {
-  //   id: "p10",
-  //   imageSrc: "/assets/product-plant.jpg",
-  //   title: "GreenLife Indoor Plant",
-  //   description: "Low-maintenance indoor plant in a ceramic pot — perfect for desks.",
-  //   price: 22.0,
-  //   oldPrice: 29.0,
-  //   rating: 4.9
-  // }
 ];
-
