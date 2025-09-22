@@ -5,7 +5,6 @@ import {
   PaperAirplaneIcon,
   WifiIcon,
 } from '@heroicons/react/24/solid';
-// Images are in public/images, use <img src="/images/..." /> directly in JSX
 
 
 const Footer: React.FC = () => (
