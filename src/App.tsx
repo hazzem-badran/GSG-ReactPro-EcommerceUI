@@ -1,16 +1,16 @@
 import './App.css'
-import Header from './component/header/Header'
-import Container from './component/layout/container'
-import Products from './component/Products'
-import ShowingWay from './component/ShowingWay'
-import SidePar from './component/sidebar/SideBar';
+import Header from './components/header/Header'
+import Container from './components/layout/container'
+import Products from './components/product/Products'
+import ShowingWay from './components/common/ShowingWay'
+import SidePar from './components/sidebar/SideBar';
 import React from 'react';
 import Keywords from './Keywords'
-import Footer from './component/footer/Footer'
-import TitleSection from './component/TitleSection'
-import Breadcrumb from './component/Breadcrumb'
-import ShowMore from './component/ShowMore'
-import Pagination from './component/Pagination'
+import Footer from './components/layout/Footer'
+import TitleSection from './components/common/TitleSection'
+import Breadcrumb from './components/common/Breadcrumb'
+import ShowMore from './components/common/ShowMore'
+import Pagination from './components/common/Pagination'
 
 function App() {
 
